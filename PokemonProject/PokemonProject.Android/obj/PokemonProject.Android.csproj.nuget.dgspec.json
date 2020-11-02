@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PokemonProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj": {}
+    "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj": {}
   },
   "projects": {
-    "D:\\PokemonProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj": {
+    "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PokemonProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj",
+        "projectUniqueName": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj",
         "projectName": "PokemonProject.Android",
-        "projectPath": "D:\\PokemonProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj",
+        "projectPath": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject.Android\\PokemonProject.Android.csproj",
         "packagesPath": "C:\\Users\\Hawkeys\\.nuget\\packages\\",
-        "outputPath": "D:\\PokemonProject\\PokemonProject\\PokemonProject.Android\\obj\\",
+        "outputPath": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\PokemonProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj": {
-                "projectPath": "D:\\PokemonProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj"
+              "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj": {
+                "projectPath": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "D:\\PokemonProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj": {
+    "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PokemonProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj",
+        "projectUniqueName": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj",
         "projectName": "PokemonProject",
-        "projectPath": "D:\\PokemonProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj",
+        "projectPath": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject\\PokemonProject.csproj",
         "packagesPath": "C:\\Users\\Hawkeys\\.nuget\\packages\\",
-        "outputPath": "D:\\PokemonProject\\PokemonProject\\PokemonProject\\obj\\",
+        "outputPath": "D:\\PokemonProject\\PokedexProject\\PokemonProject\\PokemonProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -98,6 +98,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
