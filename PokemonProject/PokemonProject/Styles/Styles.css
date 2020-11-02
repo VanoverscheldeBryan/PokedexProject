@@ -1,0 +1,14 @@
+﻿^ContentPage {
+    background-color: #3D7DCA;
+ 
+}
+
+.title{
+    color:black;
+}
+
+.button {
+    background-color: #3B4CCA;
+    color: white;
+    height:64;
+}

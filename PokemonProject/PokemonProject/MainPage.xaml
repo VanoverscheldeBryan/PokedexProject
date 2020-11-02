@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PokemonProject.MainPage"
+             Title="ProjectPokédex">
+   
+
+
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles/Styles.css"/>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Center">
+
+        <Label Text="Choose a Generation to see what pokemon are in it!" FontSize="16" FontAttributes="Bold" StyleClass="title"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+        <Label Text="Pokemon Generations:" FontSize="14" StyleClass="title"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+        <Button x:Name="Kanto" Text="Kanto (GEN1)" StyleClass="button" WidthRequest="150" 
+            HorizontalOptions="Center" Clicked="Kanto_Clicked"/>
+        <Button x:Name="Johto" Text="Johto (GEN2)" StyleClass="button" WidthRequest="150" 
+            HorizontalOptions="Center"
+                Clicked="Johto_Clicked"/>
+        <Button x:Name="Hoenn" Text="Hoenn (GEN3)" StyleClass="button" WidthRequest="150" 
+            HorizontalOptions="Center"
+                Clicked="Hoenn_Clicked"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>

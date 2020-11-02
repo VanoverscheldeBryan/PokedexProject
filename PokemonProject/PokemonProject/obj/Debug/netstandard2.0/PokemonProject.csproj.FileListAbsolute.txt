@@ -1,0 +1,17 @@
+D:\PokemonProject\PokemonProject\PokemonProject\bin\Debug\netstandard2.0\PokemonProject.deps.json
+D:\PokemonProject\PokemonProject\PokemonProject\bin\Debug\netstandard2.0\PokemonProject.dll
+D:\PokemonProject\PokemonProject\PokemonProject\bin\Debug\netstandard2.0\ref\PokemonProject.dll
+D:\PokemonProject\PokemonProject\PokemonProject\bin\Debug\netstandard2.0\PokemonProject.pdb
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.csprojAssemblyReference.cache
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.AssemblyInfoInputs.cache
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.AssemblyInfo.cs
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\XamlC.stamp
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.dll
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\ref\PokemonProject.dll
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.pdb
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Styles\Styles.css.g.cs
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\KantoPage.xaml.g.cs
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\HoennPage.xaml.g.cs
+D:\PokemonProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\JohtoPage.xaml.g.cs
