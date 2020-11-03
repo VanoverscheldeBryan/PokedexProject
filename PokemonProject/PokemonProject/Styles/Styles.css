@@ -1,6 +1,6 @@
 ﻿^ContentPage {
-    background-color: #3D7DCA;
- 
+    background-color: #F1F1F1;
+    opacity: 25;
 }
 
 .title{
@@ -15,9 +15,9 @@
 }
 
 
-.list{
-    font-size:16;
-    background-color: #3B4CCA;
-    color:white;
-    text-align:center;
+.list {
+    font-size: 16;
+    background-color: #F1F1F1;
+    color: white;
+    text-align: center;
 }

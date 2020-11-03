@@ -4,26 +4,33 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PokemonProject.Views.PokemonDetail">
-    <Grid RowSpacing="10" BackgroundColor="White">
+             x:Class="PokemonProject.Views.PokemonDetail"
+             Title="Details">
+    <Grid Padding="24" BackgroundColor="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="65*"></RowDefinition>
-            <RowDefinition Height="75*"></RowDefinition>
-            <RowDefinition Height="85*"></RowDefinition>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="250" />
         </Grid.RowDefinitions>
-        <Label  x:Name="lvwPokemon"  Text="{Binding Name}" FontSize="32" Grid.Row="0" HorizontalOptions="Center"
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="250" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image x:Name="vwImage" Source="{Binding FrontDefault}" StyleClass="image" Grid.Row="0" Grid.Column="1" Scale="1.5"
+           />
+        <Label  x:Name="lvwPokemon"  Text="{Binding Name}" FontSize="32" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Padding="24"
            FontAttributes="Bold" TextColor="Black"/>
-        <StackLayout 
-                        Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" >
-            <StackLayout>
-                <Label Text="Weight:"/>
+
+            <StackLayout Grid.Row="2" Grid.Column="0">
+                <Label Text="Weight:" HorizontalOptions="Center"/>
                 <Label x:Name="lvwDetail" Text="{Binding Weight}"
                                 TextColor="#000000" HorizontalOptions="Center" />
             </StackLayout>
-        </StackLayout>
-        <Image x:Name="vwImage" Source="{Binding FrontDefault}" Scale="2" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand"
-           VerticalOptions="FillAndExpand" 
-           />
+       
     </Grid>
+
+
 
 </ContentPage>

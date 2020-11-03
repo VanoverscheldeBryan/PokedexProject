@@ -18,6 +18,8 @@ namespace PokemonProject.Views
         {
             InitializeComponent();
             ShowPokemonList();
+
+
         }
 
         private async Task ShowPokemonList()

@@ -11,11 +11,11 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout BackgroundColor="#3B4CCA"
+                        <StackLayout BackgroundColor="#F1F1F1"
                         Orientation="Vertical" VerticalOptions="Center" >
                             <StackLayout>
                                 <Label Text="{Binding Name}"
-                                TextColor="#FFFFFF" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Padding="40" FontSize="32"/>
+                                TextColor="#000000" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Padding="40" FontSize="32"/>
                                 <Image x:Name="lvwImage" Source="{Binding FrontDefault}" Scale="2" Grid.Row="1" Grid.Column="0" HorizontalOptions="End"
                                     VerticalOptions="FillAndExpand"/>
                             </StackLayout>
