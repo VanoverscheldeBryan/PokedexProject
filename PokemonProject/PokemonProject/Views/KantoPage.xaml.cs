@@ -28,7 +28,10 @@ namespace PokemonProject.Views
 
         private void lvwPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            Result pokemon = lvwPokemon.SelectedItem as Result;
+            if (pokemon == null) return;
+            Navigation.PushAsync(new PokemonDetail(pokemon));
+            lvwPokemon.SelectedItem = null;
         }
     }
 }
