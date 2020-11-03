@@ -9,12 +9,15 @@
         <ListView x:Name="lvwPokemon" ItemSelected="lvwPokemon_ItemSelected" RowHeight="100">
             <ListView.ItemTemplate>
                 <DataTemplate>
-
-
-                    <TextCell Text="{Binding Name}"/>
-
-
-
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#3B4CCA"
+                        Orientation="Vertical" VerticalOptions="Center" >
+                            <StackLayout>
+                                <Label Text="{Binding Name}"
+                                TextColor="#FFFFFF" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Padding="40" FontSize="32"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
