@@ -21,6 +21,9 @@
                                 TextColor="#000000" HorizontalOptions="Center" />
             </StackLayout>
         </StackLayout>
+        <Image x:Name="vwImage" Source="{Binding FrontDefault}" Scale="2" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           />
     </Grid>
 
 </ContentPage>

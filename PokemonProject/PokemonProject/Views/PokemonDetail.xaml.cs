@@ -31,6 +31,7 @@ namespace PokemonProject.Views
 
             PokemonDetails detail = await GetPokemonRepo.GetPokemonDetails(name);
             lvwDetail.Text = detail.Weight.ToString();
+            vwImage.Source = detail.Sprites.FrontDefault;
 
 
         }

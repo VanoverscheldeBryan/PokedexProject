@@ -58,19 +58,24 @@ namespace PokemonProject.Models
         public Species Type { get; set; }
     }
 
-    public partial class Sprites
+    public class Sprites
     {
 
         [JsonProperty("front_default")]
-        public ImageSource FrontDefault
+        public string FrontDefault { get; set; }
+
+
+        public ImageSource ImageSrc
         {
             get
             {
-                return ImageSource.FromStream(() => new HttpClient().GetStreamAsync(FrontDefault.ToString()).Result);
+                return ImageSource.FromStream(() => new HttpClient().GetStreamAsync(FrontDefault).Result);
             }
+
         }
 
 
+    
     }
 
 }
