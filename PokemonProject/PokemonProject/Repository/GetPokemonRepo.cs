@@ -17,7 +17,7 @@ namespace PokemonProject.Repository
             return client;
         }
 
-        public static async Task<List<Pokemon>> GetDigimonItemsAsync()
+        public static async Task<Pokemon> GetPokemonKantoAsync()
         {
             string url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=151";
             using (HttpClient client = GetHttpClient())
@@ -26,8 +26,8 @@ namespace PokemonProject.Repository
                 {
                     string json = await client.GetStringAsync(url);
 
-                    List<Pokemon> digimons = JsonConvert.DeserializeObject<List<Pokemon>>(json);
-                    return digimons;
+                    Pokemon pokemons = JsonConvert.DeserializeObject<Pokemon>(json);
+                    return pokemons;
 
                 }
                 catch (Exception ex)

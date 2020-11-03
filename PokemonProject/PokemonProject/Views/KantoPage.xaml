@@ -6,10 +6,17 @@
              mc:Ignorable="d"
              x:Class="PokemonProject.Views.KantoPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Loading data..."
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView x:Name="lvwPokemon" ItemSelected="lvwPokemon_ItemSelected" RowHeight="100">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+
+                    <TextCell Text="{Binding Name}"/>
+
+
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage>  
