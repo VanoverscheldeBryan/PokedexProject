@@ -27,7 +27,7 @@ namespace PokemonProject.Models
 
         [JsonProperty("weight")]
         public long Weight { get; set; }
-    }
+    } 
 
     public class Ability
     {
@@ -55,7 +55,13 @@ namespace PokemonProject.Models
         public long Slot { get; set; }
 
         [JsonProperty("type")]
-        public Species Type { get; set; }
+        public TypeDetail TypeDetail { get; set; }
+    }
+
+    public class TypeDetail
+    {
+        [JsonProperty("name")]
+        public string NameType { get; set; }
     }
 
     public class Sprites

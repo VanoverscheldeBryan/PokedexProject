@@ -25,10 +25,17 @@
 
             <StackLayout Grid.Row="2" Grid.Column="0">
                 <Label Text="Weight:" HorizontalOptions="Center"/>
-                <Label x:Name="lvwDetail" Text="{Binding Weight}"
+                <Label x:Name="vwDetailWeight" Text="{Binding Weight}"
                                 TextColor="#000000" HorizontalOptions="Center" />
             </StackLayout>
-       
+
+
+        <StackLayout Grid.Row="2" Grid.Column="1">
+            <Label Text="Type:" HorizontalOptions="Center"/>
+            <Label x:Name="vwDetailType" Text="{Binding NameType}"
+                                TextColor="#000000" HorizontalOptions="Center" />
+        </StackLayout>
+
     </Grid>
 
 

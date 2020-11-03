@@ -23,6 +23,7 @@ namespace PokemonProject.Views
             LoadName(pokemon);
 
             showDetail(pokemon);
+            showType(pokemon);
         }
 
         private async Task showDetail(Result item)
@@ -30,11 +31,21 @@ namespace PokemonProject.Views
             var name = item.Name;
 
             PokemonDetails detail = await GetPokemonRepo.GetPokemonDetails(name);
-            lvwDetail.Text = detail.Weight.ToString();
+            vwDetailWeight.Text = detail.Weight.ToString();
             vwImage.Source = detail.Sprites.FrontDefault;
-
+            vwDetailType.Text = detail.Types.ToString();
 
         }
+        private async Task showType(Result item)
+        {
+            var name = item.Name;
+
+            TypeDetail detail = await GetPokemonRepo.GetPokemonDetails(name);
+            vwDetailType.Text = detail.NameType;
+
+        }
+
+
 
         private async Task LoadName(Result item)
         {
