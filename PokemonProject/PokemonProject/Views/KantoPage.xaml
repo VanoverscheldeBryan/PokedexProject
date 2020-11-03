@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PokemonProject.Views.KantoPage">
+             x:Class="PokemonProject.Views.KantoPage"
+             Title="KANTO POKEMON">
     <ContentPage.Content>
         <ListView x:Name="lvwPokemon" ItemSelected="lvwPokemon_ItemSelected" RowHeight="100">
             <ListView.ItemTemplate>

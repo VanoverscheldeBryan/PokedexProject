@@ -18,9 +18,6 @@
         <Label Text="Choose a Generation to see what pokemon are in it!" FontSize="16" FontAttributes="Bold" StyleClass="title"
            HorizontalOptions="Center"
            VerticalOptions="Start" />
-        <Label Text="Pokemon Generations:" FontSize="14" StyleClass="title"
-           HorizontalOptions="Center"
-           VerticalOptions="Start" />
         <Button x:Name="Kanto" Text="Kanto (GEN1)" StyleClass="button" WidthRequest="150" 
             HorizontalOptions="Center" Clicked="Kanto_Clicked"/>
         <Button x:Name="Johto" Text="Johto (GEN2)" StyleClass="button" WidthRequest="150" 

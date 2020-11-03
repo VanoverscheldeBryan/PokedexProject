@@ -38,6 +38,28 @@ namespace PokemonProject.Repository
             }
         }
 
+        public static async Task<PokemonDetails> GetPokemonDetails(string name)
+        {
+            string url = "https://pokeapi.co/api/v2/pokemon/" + name;
+
+            using (HttpClient client = GetHttpClient())
+            {
+                try
+                {
+                    string json = await client.GetStringAsync(url);
+
+                    PokemonDetails details = JsonConvert.DeserializeObject<PokemonDetails>(json);
+                    return details;
+
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
+        }
+
     }
 }
 

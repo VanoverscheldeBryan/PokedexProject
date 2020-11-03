@@ -13,6 +13,14 @@
         </Grid.RowDefinitions>
         <Label  x:Name="lvwPokemon"  Text="{Binding Name}" FontSize="32" Grid.Row="0" HorizontalOptions="Center"
            FontAttributes="Bold" TextColor="Black"/>
+        <StackLayout 
+                        Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" >
+            <StackLayout>
+                <Label Text="Weight:"/>
+                <Label x:Name="lvwDetail" Text="{Binding Weight}"
+                                TextColor="#000000" HorizontalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
     </Grid>
 
 </ContentPage>
