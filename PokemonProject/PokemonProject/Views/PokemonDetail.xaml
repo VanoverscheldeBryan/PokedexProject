@@ -5,12 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PokemonProject.Views.PokemonDetail"
-             Title="Details">
+             Title="DETAILS">
     <Grid Padding="24" BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="250" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -23,11 +25,11 @@
         <Label  x:Name="lvwPokemon"  Text="{Binding Name}" FontSize="32" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Padding="24"
            FontAttributes="Bold" TextColor="Black"/>
 
-            <StackLayout Grid.Row="2" Grid.Column="0">
-                <Label Text="Weight:" HorizontalOptions="Center"/>
-                <Label x:Name="vwDetailWeight" Text="{Binding Weight}"
+        <StackLayout Grid.Row="2" Grid.Column="0">
+            <Label Text="Weight:" HorizontalOptions="Center"/>
+            <Label x:Name="vwDetailWeight" Text="{Binding Weight}"
                                 TextColor="#000000" HorizontalOptions="Center" />
-            </StackLayout>
+        </StackLayout>
 
 
         <StackLayout Grid.Row="2" Grid.Column="1">
@@ -35,8 +37,16 @@
             <Label x:Name="vwDetailType" Text="{Binding NameType}"
                                 TextColor="#000000" HorizontalOptions="Center" />
         </StackLayout>
-
+        <StackLayout Grid.Row="2" Grid.Column="2">
+            <Label Text="Ability:" HorizontalOptions="Center"/>
+            <Label x:Name="vwDetailAbility" Text="{Binding Name}"
+                                TextColor="#000000" HorizontalOptions="Center" />
+        </StackLayout>
+        <Button x:Name="Kanto" Text="See BaseStats!" StyleClass="button" WidthRequest="150" 
+            HorizontalOptions="Center" Clicked="Kanto_Clicked" Grid.Column="1" Grid.Row="3"/>
     </Grid>
+
+
 
 
 

@@ -34,6 +34,9 @@ namespace PokemonProject.Views
             vwDetailWeight.Text = detail.Weight.ToString();
             vwImage.Source = detail.Sprites.FrontDefault;
             vwDetailType.Text = detail.Types[0].TypeDetail.NameType;
+            vwDetailAbility.Text = detail.Abilities[0].AbilityAbility.Name;
+            //lvStats.ItemsSource = detail.Stats[0].StatStat.Name;
+            //lvStats.ItemsSource = detail.Stats[0].BaseStat.ToString();
         }
    
 
@@ -42,6 +45,17 @@ namespace PokemonProject.Views
         {
             lvwPokemon.Text = item.Name;
 
+        }
+
+        private void Kanto_Clicked(object sender, EventArgs e)
+        {
+            NavigateToStats();
+
+        }
+
+        private void NavigateToStats()
+        {
+            Navigation.PushAsync(new PokemonStatsPage());
         }
     }
 }
