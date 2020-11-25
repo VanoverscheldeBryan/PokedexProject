@@ -51,5 +51,10 @@ namespace PokemonProject.Views
         {
             Navigation.PopAsync();
         }
+
+        private void Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

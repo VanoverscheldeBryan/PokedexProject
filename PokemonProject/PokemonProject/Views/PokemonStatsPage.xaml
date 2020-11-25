@@ -4,12 +4,58 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PokemonProject.Views.PokemonStatsPage">
-    <ContentPage.Content>
+             x:Class="PokemonProject.Views.PokemonStatsPage"
+             NavigationPage.HasNavigationBar="false">
 
-        <StackLayout>
-            <Label  x:Name="lvwPokemon"  Text="{Binding Name}" FontSize="32" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Padding="24"
+
+    <Grid Padding="24" BackgroundColor="#F7F8FF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0" Grid.Row="0">
+            <Button x:Name="btnnavBack" Text="GO BACK TO PKMN" Clicked="btnnavBack_Clicked" StyleId="Button" VerticalOptions="StartAndExpand"  BackgroundColor="#3B4CCA" TextColor="#FFFFFF" Opacity="0.5" />
+
+            <Label  x:Name="lvstatHp"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32" 
+           FontAttributes="Bold" TextColor="Black"/>
+            <Label  x:Name="lvstatAttack"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+            <Label  x:Name="lvstatDefence"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+            <Label  x:Name="lvstatSpecialAtt"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+            <Label  x:Name="lvstatSpecialDef"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+            <Label  x:Name="lvstatSpeed"  Text="{Binding Name}" FontSize="16" HorizontalOptions="StartAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+    </StackLayout>
+
+        <StackLayout Grid.Column="1" Grid.Row="0">
+            <Button Text="" StyleId="Button" VerticalOptions="StartAndExpand"  BackgroundColor="#F7F8FF" TextColor="#FFFFFF" Opacity="0" />
+
+            <Label  x:Name="lvstatHpx"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="EndAndExpand" Padding="32" 
+           FontAttributes="Bold" TextColor="Black"/>
+        <Label  x:Name="lvstatAttackx"  Text="{Binding BaseStat}" FontSize="16"  HorizontalOptions="EndAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+        <Label  x:Name="lvstatDefencex"  Text="{Binding BaseStat}" FontSize="16"  HorizontalOptions="EndAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+        <Label  x:Name="lvstatSpecialAttx"  Text="{Binding BaseStat}" FontSize="16"  HorizontalOptions="EndAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+        <Label  x:Name="lvstatSpecialDefx"  Text="{Binding BaseStat}" FontSize="16"  HorizontalOptions="EndAndExpand" Padding="32"
+           FontAttributes="Bold" TextColor="Black"/>
+        <Label  x:Name="lvstatSpeedx"  Text="{Binding BaseStat}" FontSize="16" HorizontalOptions="EndAndExpand" Padding="32"
            FontAttributes="Bold" TextColor="Black"/>
         </StackLayout>
-    </ContentPage.Content>
+
+
+        </Grid>
+
 </ContentPage>

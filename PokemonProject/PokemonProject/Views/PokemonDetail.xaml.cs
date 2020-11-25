@@ -18,6 +18,7 @@ namespace PokemonProject.Views
         public Result pokemon;
         public PokemonDetail(Result pokemon)
         {
+            this.pokemon = pokemon;
             InitializeComponent();
     
             LoadName(pokemon);
@@ -47,16 +48,10 @@ namespace PokemonProject.Views
 
         }
 
-        private void Kanto_Clicked(object sender, EventArgs e)
-        {
-            NavigateToStats();
+    
+       
 
-        }
-
-        private void NavigateToStats()
-        {
-            Navigation.PushAsync(new PokemonStatsPage());
-        }
+   
 
         private void btnNavBack_Clicked(object sender, EventArgs e)
         {
@@ -66,6 +61,12 @@ namespace PokemonProject.Views
         private void goBack()
         {
             Navigation.PopAsync();
+        }
+
+        private void btnStats_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PokemonStatsPage(pokemon));
+
         }
     }
 }

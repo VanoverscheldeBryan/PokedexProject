@@ -38,6 +38,7 @@ namespace PokemonProject.Repository
             }
         }
 
+
         public static async Task<PokemonDetails> GetPokemonDetails(string name)
         {
             string url = "https://pokeapi.co/api/v2/pokemon/" + name;
@@ -59,6 +60,8 @@ namespace PokemonProject.Repository
                 }
             }
         }
+
+
 
 
     }

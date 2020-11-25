@@ -8,6 +8,7 @@
              Title="KANTO POKEMON"
              NavigationPage.HasNavigationBar="false">
         <StackLayout>
+        <SearchBar x:Name="Search" Placeholder="Search PKMN" CancelButtonColor="Red" PlaceholderColor="#C3C4C9" HorizontalTextAlignment="Center" TextChanged="Search_TextChanged" BackgroundColor="#F7F8FF" FontAttributes="Italic"></SearchBar>
         <ListView x:Name="lvwPokemon" ItemSelected="lvwPokemon_ItemSelected" RowHeight="100" SeparatorColor="#74B3CE" BackgroundColor="#F7F8FF">
                 <ListView.ItemTemplate>
                     <DataTemplate>
