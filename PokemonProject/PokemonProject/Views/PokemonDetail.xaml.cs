@@ -57,5 +57,15 @@ namespace PokemonProject.Views
         {
             Navigation.PushAsync(new PokemonStatsPage());
         }
+
+        private void btnNavBack_Clicked(object sender, EventArgs e)
+        {
+            goBack();
+        }
+
+        private void goBack()
+        {
+            Navigation.PopAsync();
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace PokemonProject.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class KantoPage : ContentPage
     {
+        public Result pokemon;
+
         public KantoPage()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace PokemonProject.Views
 
 
         }
+
+
+
 
         private async Task ShowPokemonList()
         {
@@ -34,6 +39,17 @@ namespace PokemonProject.Views
             if (pokemon == null) return;
             Navigation.PushAsync(new PokemonDetail(pokemon));
             lvwPokemon.SelectedItem = null;
+        }
+
+        private void btnNavBack_Clicked(object sender, EventArgs e)
+        {
+            GoBack();
+
+        }
+
+        private void GoBack()
+        {
+            Navigation.PopAsync();
         }
     }
 }

@@ -1,13 +1,17 @@
 ﻿^ContentPage {
-    background-color: #F1F1F1;
-    opacity: 25;
+    background-color: #F7F8FF;
+    
 }
 
-.title{
-    color:black;
+#title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.button {
+#button {
+    
     background-color: #3B4CCA;
     color: white;
     height:64;
@@ -15,9 +19,14 @@
 }
 
 
-.list {
+#list {
     font-size: 16;
     background-color: #F1F1F1;
     color: white;
     text-align: center;
+}
+
+#flex {
+    display: flex;
+    align-items: center;
 }

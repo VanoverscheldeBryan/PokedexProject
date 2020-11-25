@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PokemonProject.MainPage"
-             Title="ProjectPokédex">
+             Title="ProjectPokédex"
+             NavigationPage.HasNavigationBar="false">
    
 
 
@@ -13,18 +14,19 @@
         <StyleSheet Source="Styles/Styles.css"/>
     </ContentPage.Resources>
 
-    <StackLayout VerticalOptions="Center">
+    <StackLayout StyleId="Flex" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+        <Label Text="ProjectPokédex" FontSize="56" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"  TextColor="#3B4CCA" />
 
-        <Label Text="Choose a Generation to see what pokemon are in it!" FontSize="16" FontAttributes="Bold" StyleClass="title"
-           HorizontalOptions="Center"
-           VerticalOptions="Start" />
-        <Button x:Name="Kanto" Text="Kanto (GEN1)" StyleClass="button" WidthRequest="150" 
-            HorizontalOptions="Center" Clicked="Kanto_Clicked"/>
-        <Button x:Name="Johto" Text="Johto (GEN2)" StyleClass="button" WidthRequest="150" 
-            HorizontalOptions="Center"
+        <Label Text="Choose a Generation below to see what pokemon are in it!" FontSize="16" FontAttributes="Bold" WidthRequest="250" StyleClass="title"
+           HorizontalOptions="CenterAndExpand" StyleId="Title" HorizontalTextAlignment="Center" Margin="16"
+           VerticalOptions="Start" TextColor="Black" />
+        <Button x:Name="Kanto" Text="Kanto (GEN1)" StyleId="button" WidthRequest="150" 
+            HorizontalOptions="Center" Clicked="Kanto_Clicked" Margin="8"/>
+        <Button x:Name="Johto" Text="Johto (GEN2)" StyleId="button" WidthRequest="150" 
+            HorizontalOptions="Center" Margin="8"
                 Clicked="Johto_Clicked"/>
-        <Button x:Name="Hoenn" Text="Hoenn (GEN3)" StyleClass="button" WidthRequest="150" 
-            HorizontalOptions="Center"
+        <Button x:Name="Hoenn" Text="Hoenn (GEN3)" StyleId  ="button" WidthRequest="150" 
+            HorizontalOptions="Center" Margin="8"
                 Clicked="Hoenn_Clicked"/>
 
 

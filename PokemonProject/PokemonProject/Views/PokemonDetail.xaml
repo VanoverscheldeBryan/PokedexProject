@@ -5,8 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PokemonProject.Views.PokemonDetail"
-             Title="DETAILS">
-    <Grid Padding="24" BackgroundColor="White">
+             Title="DETAILS"
+             NavigationPage.HasNavigationBar="false">
+    <Grid Padding="24" BackgroundColor="#F7F8FF">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -26,24 +27,28 @@
            FontAttributes="Bold" TextColor="Black"/>
 
         <StackLayout Grid.Row="2" Grid.Column="0">
-            <Label Text="Weight:" HorizontalOptions="Center"/>
+            <Label Text="Weight" FontAttributes="Bold" FontSize="16" TextColor="Black" HorizontalOptions="Center" />
             <Label x:Name="vwDetailWeight" Text="{Binding Weight}"
                                 TextColor="#000000" HorizontalOptions="Center" />
         </StackLayout>
 
 
         <StackLayout Grid.Row="2" Grid.Column="1">
-            <Label Text="Type:" HorizontalOptions="Center"/>
+            <Label Text="Type" FontAttributes="Bold" FontSize="16" TextColor="Black" HorizontalOptions="Center"/>
             <Label x:Name="vwDetailType" Text="{Binding NameType}"
                                 TextColor="#000000" HorizontalOptions="Center" />
         </StackLayout>
         <StackLayout Grid.Row="2" Grid.Column="2">
-            <Label Text="Ability:" HorizontalOptions="Center"/>
+            <Label Text="Ability" FontAttributes="Bold" FontSize="16" TextColor="Black" HorizontalOptions="Center"/>
             <Label x:Name="vwDetailAbility" Text="{Binding Name}"
                                 TextColor="#000000" HorizontalOptions="Center" />
         </StackLayout>
-        <Button x:Name="Kanto" Text="See BaseStats!" StyleClass="button" WidthRequest="150" 
-            HorizontalOptions="Center" Clicked="Kanto_Clicked" Grid.Column="1" Grid.Row="3"/>
+        <!--<Button x:Name="Kanto" Text="See BaseStats!" StyleClass="button" WidthRequest="150" 
+            HorizontalOptions="Center" Clicked="Kanto_Clicked" Grid.Column="1" Grid.Row="3"/>-->
+
+
+        <Button x:Name="btnNavBack" Text="GO BACK TO LIST" Clicked="btnNavBack_Clicked" StyleId="Button" VerticalOptions="EndAndExpand" BackgroundColor="#3B4CCA" TextColor="#FFFFFF" Opacity="0.5" Grid.Column="1" Grid.Row="3"/>
+
     </Grid>
 
 
