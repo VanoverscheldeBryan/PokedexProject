@@ -37,6 +37,46 @@ namespace PokemonProject.Repository
                 }
             }
         }
+        public static async Task<Pokemon> GetPokemonJohtoAsync()
+        {
+            string url = "https://pokeapi.co/api/v2/pokemon?offset=151&limit=251";
+            using (HttpClient client = GetHttpClient())
+            {
+                try
+                {
+                    string json = await client.GetStringAsync(url);
+
+                    Pokemon pokemons = JsonConvert.DeserializeObject<Pokemon>(json);
+                    return pokemons;
+
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
+        }
+        public static async Task<Pokemon> GetPokemonHoennAsync()
+        {
+            string url = "https://pokeapi.co/api/v2/pokemon?offset=251&limit=386";
+            using (HttpClient client = GetHttpClient())
+            {
+                try
+                {
+                    string json = await client.GetStringAsync(url);
+
+                    Pokemon pokemons = JsonConvert.DeserializeObject<Pokemon>(json);
+                    return pokemons;
+
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
+        }
 
 
         public static async Task<PokemonDetails> GetPokemonDetails(string name)
