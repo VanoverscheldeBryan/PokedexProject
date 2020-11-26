@@ -7,8 +7,8 @@
              x:Class="PokemonProject.Views.PokemonStatsPage"
              NavigationPage.HasNavigationBar="false">
 
-
-    <Grid Padding="24" BackgroundColor="#F7F8FF">
+    <StackLayout>
+        <Grid Padding="24" BackgroundColor="#F7F8FF">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -22,7 +22,6 @@
             <ColumnDefinition  Width="*" />
         </Grid.ColumnDefinitions>
         <StackLayout Grid.Column="0" Grid.Row="0">
-            <Button x:Name="btnnavBack" Text="GO BACK TO PKMN" Clicked="btnnavBack_Clicked" StyleId="Button" VerticalOptions="StartAndExpand"  BackgroundColor="#3B4CCA" TextColor="#FFFFFF" Opacity="0.5" />
 
             <Label  x:Name="lvstatHp"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32" 
            FontAttributes="Bold" TextColor="Black"/>
@@ -39,7 +38,6 @@
     </StackLayout>
 
         <StackLayout Grid.Column="1" Grid.Row="0">
-            <Button Text="" StyleId="Button" VerticalOptions="StartAndExpand"  BackgroundColor="#F7F8FF" TextColor="#FFFFFF" Opacity="0" />
 
             <Label  x:Name="lvstatHpx"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="EndAndExpand" Padding="32" 
            FontAttributes="Bold" TextColor="Black"/>
@@ -57,5 +55,8 @@
 
 
         </Grid>
+        <Button x:Name="btnnavBack" Text="GO BACK TO PKMN" Clicked="btnnavBack_Clicked" StyleId="Button" VerticalOptions="EndAndExpand"  BackgroundColor="#3B4CCA" TextColor="#FFFFFF" Opacity="0.5" />
+
+    </StackLayout>
 
 </ContentPage>

@@ -20,14 +20,17 @@
         <Label Text="Choose a Generation below to see what pokemon are in it!" FontSize="16" FontAttributes="Bold" WidthRequest="250" StyleClass="title"
            HorizontalOptions="CenterAndExpand" StyleId="Title" HorizontalTextAlignment="Center" Margin="16"
            VerticalOptions="Start" TextColor="Black" />
-        <Button x:Name="Kanto" Text="Kanto (GEN1)" StyleId="button" WidthRequest="150" 
+        <Button x:Name="Kanto" Text="ShowPokemon" StyleId="button" WidthRequest="150" 
             HorizontalOptions="Center" Clicked="Kanto_Clicked" Margin="8"/>
-        <Button x:Name="Johto" Text="Johto (GEN2)" StyleId="button" WidthRequest="150" 
+        <!--<Button x:Name="Johto" Text="Johto (GEN2)" StyleId="button" WidthRequest="150" 
             HorizontalOptions="Center" Margin="8"
                 Clicked="Johto_Clicked"/>
         <Button x:Name="Hoenn" Text="Hoenn (GEN3)" StyleId  ="button" WidthRequest="150" 
             HorizontalOptions="Center" Margin="8"
-                Clicked="Hoenn_Clicked"/>
+                Clicked="Hoenn_Clicked"/>-->
+        <Button x:Name="Favorites" Text="ShowFavorites" StyleId  ="button2" WidthRequest="150" 
+            HorizontalOptions="Center" Margin="8"
+                Clicked="Favorites_Clicked_1"/>
 
 
 

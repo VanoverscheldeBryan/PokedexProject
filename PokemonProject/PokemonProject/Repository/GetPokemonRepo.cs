@@ -10,6 +10,8 @@ namespace PokemonProject.Repository
 {
     public static class GetPokemonRepo
     {
+
+        public static List<Result> favorites = new List<Result>();
         private static HttpClient GetHttpClient()
         {
             HttpClient client = new HttpClient();
@@ -99,6 +101,31 @@ namespace PokemonProject.Repository
                     throw ex;
                 }
             }
+        }
+        public static async Task<List<Result>> GetPokemonAllPokemon()
+        {
+            string url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=800";
+
+            using (HttpClient client = GetHttpClient())
+            {
+                try
+                {
+                    string json = await client.GetStringAsync(url);
+                    
+                    List<Result> pokemons = JsonConvert.DeserializeObject<Pokemon>(json).Results;
+                    return pokemons;
+
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
+        }
+        public static void addToFavorite(Result favorite)
+        {
+            favorites.Add(favorite);
         }
 
 

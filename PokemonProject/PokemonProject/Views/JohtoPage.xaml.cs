@@ -35,7 +35,7 @@ namespace PokemonProject.Views
         {
             Result pokemon = lvwPokemon.SelectedItem as Result;
             if (pokemon == null) return;
-            Navigation.PushAsync(new PokemonDetail(pokemon));
+            Navigation.PushAsync(new PokemonDetail( pokemon));
             lvwPokemon.SelectedItem = null;
         }
 

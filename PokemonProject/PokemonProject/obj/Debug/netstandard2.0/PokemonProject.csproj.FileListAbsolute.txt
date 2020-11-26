@@ -31,6 +31,8 @@ D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstan
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.dll
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\ref\PokemonProject.dll
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.pdb
-D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\XamlC.stamp
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\PokemonDetail.xaml.g.cs
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\PokemonStatsPage.xaml.g.cs
+D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\XamlC.stamp
+D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\Favorites.xaml.g.cs
+D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\PokemonPage.xaml.g.cs

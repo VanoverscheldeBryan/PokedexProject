@@ -5,6 +5,8 @@ using System.Text;
 
 namespace PokemonProject.Models
 {
+
+
     public class Pokemon
     {
 
@@ -20,14 +22,19 @@ namespace PokemonProject.Models
 
         [JsonProperty("results")]
         public List<Result> Results { get; set; }
+
     }
 
     public class Result
     {
-            [JsonProperty("name")]
+        public bool isFavorite { get; set; }
+
+        [JsonProperty("name")]
             public string Name { get; set; }
 
             [JsonProperty("url")]
             public Uri Url { get; set; }
         }
     }
+
+

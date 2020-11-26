@@ -14,8 +14,8 @@ namespace PokemonProject.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PokemonDetail : ContentPage
     {
-
         public Result pokemon;
+        
         public PokemonDetail(Result pokemon)
         {
             this.pokemon = pokemon;
@@ -67,6 +67,13 @@ namespace PokemonProject.Views
         {
             Navigation.PushAsync(new PokemonStatsPage(pokemon));
 
+        }
+
+        private void addToFav_Clicked(object sender, EventArgs e)
+        {
+
+            //pokemon.isFavorite = true;
+            GetPokemonRepo.addToFavorite(pokemon);
         }
     }
 }

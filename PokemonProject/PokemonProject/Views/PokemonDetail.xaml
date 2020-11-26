@@ -14,6 +14,7 @@
             <RowDefinition Height="10" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
 
 
         </Grid.RowDefinitions>
@@ -51,8 +52,9 @@
             <Button x:Name="btnStats" Text="ShowStats" Clicked="btnStats_Clicked" StyleId="Button" VerticalOptions="EndAndExpand" BackgroundColor="#3B4CCA" TextColor="#FFFFFF"  Grid.Column="1" Grid.Row="4"/>
 
         </StackLayout>
+        <Button x:Name="addToFav" Text="Add to favorites" Clicked="addToFav_Clicked" StyleId="Button" VerticalOptions="EndAndExpand" BackgroundColor="#CC0000" TextColor="#FFFFFF"  Grid.Column="1" Grid.Row="4"/>
 
-        <Button x:Name="btnNavBack" Text="GO BACK TO LIST" Clicked="btnNavBack_Clicked" StyleId="Button" VerticalOptions="EndAndExpand" BackgroundColor="#3B4CCA" TextColor="#FFFFFF" Opacity="0.5" Grid.Column="1" Grid.Row="4"/>
+        <Button x:Name="btnNavBack" Text="GO BACK TO LIST" Clicked="btnNavBack_Clicked" StyleId="Button" VerticalOptions="EndAndExpand" BackgroundColor="#3B4CCA" TextColor="#FFFFFF" Opacity="0.5" Grid.Column="1" Grid.Row="5"/>
 
     </Grid>
 

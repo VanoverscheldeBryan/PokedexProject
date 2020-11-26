@@ -1,4 +1,6 @@
-﻿using PokemonProject.Views;
+﻿using PokemonProject.Models;
+using PokemonProject.Repository;
+using PokemonProject.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +16,17 @@ namespace PokemonProject
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public List<Result> pokemons { get; set; }
+        //public List<Result> pokemons;
         public MainPage()
         {
             InitializeComponent();
+            getPokemonList();
+        }
+
+        private async Task getPokemonList()
+        {
+            pokemons = await GetPokemonRepo.GetPokemonAllPokemon();
         }
 
         private void Kanto_Clicked(object sender, EventArgs e)
@@ -26,30 +36,52 @@ namespace PokemonProject
 
         private void NavigateToKanto()
         {
-            Navigation.PushAsync(new KantoPage());
+            Navigation.PushAsync(new PokemonPage(pokemons));
 
         }
 
-        private void Johto_Clicked(object sender, EventArgs e)
+        //private void Johto_Clicked(object sender, EventArgs e)
+        //{
+        //    NavigateToJohto();
+        //}
+
+        //private void NavigateToJohto()
+        //{
+        //    Navigation.PushAsync(new JohtoPage());
+
+        //}
+
+        //private void Hoenn_Clicked(object sender, EventArgs e)
+        //{
+        //    NavigateToHoenn();
+        //}
+
+        //private void NavigateToHoenn()
+        //{
+        //    Navigation.PushAsync(new HoennPage());
+
+        //}
+
+        //private void Favorites_Clicked(object sender, EventArgs e)
+        //{
+        //    NavigateToFavorites();
+
+        //}
+
+        //private void NavigateToFavorites()
+        //{
+        //    List<Pokemon> favorites = new List<Pokemon>();
+        //    //foreach 
+        //    //Navigation.PushAsync(new Favorites(favorites));
+            
+        //}
+
+        private void Favorites_Clicked_1(object sender, EventArgs e)
         {
-            NavigateToJohto();
-        }
-
-        private void NavigateToJohto()
-        {
-            Navigation.PushAsync(new JohtoPage());
-
-        }
-
-        private void Hoenn_Clicked(object sender, EventArgs e)
-        {
-            NavigateToHoenn();
-        }
-
-        private void NavigateToHoenn()
-        {
-            Navigation.PushAsync(new HoennPage());
-
+            List<Result> favorites = GetPokemonRepo.favorites;
+     
+            
+            Navigation.PushAsync(new Favorites(favorites));
         }
     }
 }
