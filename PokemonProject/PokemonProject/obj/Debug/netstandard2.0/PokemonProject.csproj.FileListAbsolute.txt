@@ -22,9 +22,6 @@ D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\bin\Debug\netstan
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.csprojAssemblyReference.cache
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\HoennPage.xaml.g.cs
-D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\JohtoPage.xaml.g.cs
-D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\KantoPage.xaml.g.cs
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Styles\Styles.css.g.cs
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.AssemblyInfoInputs.cache
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\PokemonProject.AssemblyInfo.cs
@@ -36,3 +33,4 @@ D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstan
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\XamlC.stamp
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\Favorites.xaml.g.cs
 D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\PokemonPage.xaml.g.cs
+D:\PokemonProject\PokedexProject\PokemonProject\PokemonProject\obj\Debug\netstandard2.0\Views\PokemonDetailsFavorited.xaml.g.cs

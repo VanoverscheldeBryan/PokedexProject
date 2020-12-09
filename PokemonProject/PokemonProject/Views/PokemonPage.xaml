@@ -18,7 +18,6 @@
                                 <Label Text="{Binding Name}"
                                 TextColor="#000000" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Margin="16"  FontSize="16" FontAttributes="Bold"/>
 
-
                             </StackLayout>
                         </StackLayout>
                     </ViewCell>

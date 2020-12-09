@@ -10,7 +10,11 @@ namespace PokemonProject
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#3B4CCA"),
+                BarTextColor = Color.White,
+            };
         }
 
         protected override void OnStart()

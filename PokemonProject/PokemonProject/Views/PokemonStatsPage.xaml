@@ -18,13 +18,14 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="250" />
             <ColumnDefinition  Width="*" />
         </Grid.ColumnDefinitions>
         <StackLayout Grid.Column="0" Grid.Row="0">
 
             <Label  x:Name="lvstatHp"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32" 
            FontAttributes="Bold" TextColor="Black"/>
+           
             <Label  x:Name="lvstatAttack"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32"
            FontAttributes="Bold" TextColor="Black"/>
             <Label  x:Name="lvstatDefence"  Text="{Binding Name}" FontSize="16"  HorizontalOptions="StartAndExpand" Padding="32"

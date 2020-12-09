@@ -17,7 +17,7 @@
     <StackLayout StyleId="Flex" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
         <Label Text="ProjectPokédex" FontSize="56" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"  TextColor="#3B4CCA" />
 
-        <Label Text="Choose a Generation below to see what pokemon are in it!" FontSize="16" FontAttributes="Bold" WidthRequest="250" StyleClass="title"
+        <Label Text="Welcome to the world of Pokémon!" FontSize="16" FontAttributes="Bold" WidthRequest="250" StyleClass="title"
            HorizontalOptions="CenterAndExpand" StyleId="Title" HorizontalTextAlignment="Center" Margin="16"
            VerticalOptions="Start" TextColor="Black" />
         <Button x:Name="Kanto" Text="ShowPokemon" StyleId="button" WidthRequest="150" 

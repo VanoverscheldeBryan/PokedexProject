@@ -128,6 +128,10 @@ namespace PokemonProject.Repository
             favorites.Add(favorite);
         }
 
+        public static void removeFromFavorites(Result favorite)
+        {
+            favorites.Remove(favorite);
+        }
 
 
 

@@ -74,6 +74,8 @@ namespace PokemonProject.Views
 
             //pokemon.isFavorite = true;
             GetPokemonRepo.addToFavorite(pokemon);
+            DisplayAlert("Good choice!", "Pokemon Added to Favorites!", "Close");
+
         }
     }
 }
